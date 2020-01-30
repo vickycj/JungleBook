@@ -37,5 +37,9 @@ public class Constants {
 
     }
 
+    public static class USERS {
+        public static final int user01 = 101;
+        public static final int user02 = 202;
+    }
 
 }

@@ -4,12 +4,16 @@ import java.util.List;
 public class User {
 
     private String userName;
-    private String userId;
+    private int userId;
     private List<Animal> animalsObtained = new ArrayList<>();
-    private List<Task> tasksList;
+    private List<Task> tasksList = Rules.TASKS_LIST.gettasksList();
     private int currentLevel = Constants.LEVELS.LEVEL_1;
     private int tasksCompletedInCurrentLevel = 0;
 
+    public User(String userName, int userId) {
+        this.userName = userName;
+        this.userId = userId;
+    }
 
     public String getUserName() {
         return userName;
@@ -19,11 +23,11 @@ public class User {
         this.userName = userName;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 

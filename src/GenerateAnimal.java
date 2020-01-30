@@ -36,7 +36,7 @@ public class GenerateAnimal {
 
     private Animal findAndGetAnimal(int taskCount ,String[] rules){
         Animal animal = null;
-        switch (rules[taskCount-1]){
+        switch (rules[taskCount]){
             case Constants.CATEGORY.LOW: {
                 animal = Constants.ANIMALS_CATEGORY.LOW_ANIMALS[0];
                 break;

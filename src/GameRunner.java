@@ -1,6 +1,6 @@
 public class GameRunner {
 
-    Service service = new Service();
+    private Service service = new Service();
 
     public User postTaskCompletion(int userId, int taskId){
 

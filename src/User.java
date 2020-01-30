@@ -72,4 +72,17 @@ public class User {
     public void setLoyalCustomer(boolean loyalCustomer) {
         isLoyalCustomer = loyalCustomer;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userName='" + userName + '\'' +
+                ", userId=" + userId +
+                ", animalsObtained=" + animalsObtained +
+                ", tasksList=" + tasksList +
+                ", currentLevel=" + currentLevel +
+                ", tasksCompletedInCurrentLevel=" + tasksCompletedInCurrentLevel +
+                ", isLoyalCustomer=" + isLoyalCustomer +
+                '}';
+    }
 }

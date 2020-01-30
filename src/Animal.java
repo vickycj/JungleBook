@@ -33,4 +33,13 @@ public class Animal {
     public void setAnimalCategory(String animalCategory) {
         this.animalCategory = animalCategory;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "value=" + value +
+                ", animalName='" + animalName + '\'' +
+                ", animalCategory='" + animalCategory + '\'' +
+                '}';
+    }
 }

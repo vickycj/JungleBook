@@ -42,4 +42,14 @@ public class Task {
     public void setTaskCompleted(boolean taskCompleted) {
         isTaskCompleted = taskCompleted;
     }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "taskId=" + taskId +
+                ", taskDescription='" + taskDescription + '\'' +
+                ", taskLevel=" + taskLevel +
+                ", isTaskCompleted=" + isTaskCompleted +
+                '}';
+    }
 }

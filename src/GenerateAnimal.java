@@ -1,7 +1,7 @@
 public class GenerateAnimal {
 
 
-    private Animal getAnimal(User userdetails, boolean isLoyalCustomer){
+    public Animal getAnimal(User userdetails, boolean isLoyalCustomer){
 
         Animal animal = null;
         int taskCount = userdetails.getTasksCompletedInCurrentLevel();

@@ -9,10 +9,12 @@ public class User {
     private List<Task> tasksList = Rules.TASKS_LIST.gettasksList();
     private int currentLevel = Constants.LEVELS.LEVEL_1;
     private int tasksCompletedInCurrentLevel = 0;
+    private boolean isLoyalCustomer = false;
 
-    public User(String userName, int userId) {
+    public User(String userName, int userId, boolean isLoyalCustomer) {
         this.userName = userName;
         this.userId = userId;
+        this.isLoyalCustomer = isLoyalCustomer;
     }
 
     public String getUserName() {
@@ -61,5 +63,13 @@ public class User {
 
     public void setTasksCompletedInCurrentLevel(int tasksCompletedInCurrentLevel) {
         this.tasksCompletedInCurrentLevel = tasksCompletedInCurrentLevel;
+    }
+
+    public boolean isLoyalCustomer() {
+        return isLoyalCustomer;
+    }
+
+    public void setLoyalCustomer(boolean loyalCustomer) {
+        isLoyalCustomer = loyalCustomer;
     }
 }

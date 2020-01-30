@@ -1,9 +1,13 @@
 public class GameRunner {
 
+    Service service = new Service();
 
+    public User postTaskCompletion(int userId, int taskId){
 
-    public User getUserDetails(){
+        return service.postTaskCompletion(userId,taskId);
+    }
 
-        return null;
+    public User getUserDetails(int userId){
+        return service.getUserDetails(userId);
     }
 }

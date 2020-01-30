@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class User {
 
     private String userName;
     private String userId;
-    private List<Animal> animalsObtained;
+    private List<Animal> animalsObtained = new ArrayList<>();
     private List<Task> tasksList;
     private int currentLevel = Constants.LEVELS.LEVEL_1;
 

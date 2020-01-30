@@ -1,16 +1,16 @@
 public class Task {
 
-    private String taskName;
+    private int taskId;
     private String taskDescription;
     private String taskLevel;
     private boolean isTaskCompleted = false;
 
-    public String getTaskName() {
-        return taskName;
+    public int getTaskId() {
+        return taskId;
     }
 
-    public void setTaskName(String taskName) {
-        this.taskName = taskName;
+    public void setTaskId(int taskId) {
+        this.taskId = taskId;
     }
 
     public String getTaskDescription() {

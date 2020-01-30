@@ -2,8 +2,14 @@ public class Task {
 
     private int taskId;
     private String taskDescription;
-    private String taskLevel;
+    private int taskLevel;
     private boolean isTaskCompleted = false;
+
+    public Task(int taskId, String taskDescription, int taskLevel) {
+        this.taskId = taskId;
+        this.taskDescription = taskDescription;
+        this.taskLevel = taskLevel;
+    }
 
     public int getTaskId() {
         return taskId;
@@ -21,11 +27,11 @@ public class Task {
         this.taskDescription = taskDescription;
     }
 
-    public String getTaskLevel() {
+    public int getTaskLevel() {
         return taskLevel;
     }
 
-    public void setTaskLevel(String taskLevel) {
+    public void setTaskLevel(int taskLevel) {
         this.taskLevel = taskLevel;
     }
 

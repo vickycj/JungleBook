@@ -8,6 +8,7 @@ public class User {
     private List<Animal> animalsObtained = new ArrayList<>();
     private List<Task> tasksList;
     private int currentLevel = Constants.LEVELS.LEVEL_1;
+    private int tasksCompletedInCurrentLevel = 0;
 
 
     public String getUserName() {
@@ -48,5 +49,13 @@ public class User {
 
     public void setCurrentLevel(int currentLevel) {
         this.currentLevel = currentLevel;
+    }
+
+    public int getTasksCompletedInCurrentLevel() {
+        return tasksCompletedInCurrentLevel;
+    }
+
+    public void setTasksCompletedInCurrentLevel(int tasksCompletedInCurrentLevel) {
+        this.tasksCompletedInCurrentLevel = tasksCompletedInCurrentLevel;
     }
 }

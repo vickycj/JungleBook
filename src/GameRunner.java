@@ -10,4 +10,5 @@ public class GameRunner {
     public User getUserDetails(int userId){
         return service.getUserDetails(userId);
     }
+
 }

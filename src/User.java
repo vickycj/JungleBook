@@ -10,6 +10,8 @@ public class User {
     private int currentLevel = Constants.LEVELS.LEVEL_1;
     private int tasksCompletedInCurrentLevel = 0;
     private boolean isLoyalCustomer = false;
+    private boolean allTasksCompleted = false;
+    private int totalTaskCompleted = 0;
 
     public User(String userName, int userId, boolean isLoyalCustomer) {
         this.userName = userName;
@@ -71,6 +73,22 @@ public class User {
 
     public void setLoyalCustomer(boolean loyalCustomer) {
         isLoyalCustomer = loyalCustomer;
+    }
+
+    public boolean isAllTasksCompleted() {
+        return allTasksCompleted;
+    }
+
+    public void setAllTasksCompleted(boolean allTasksCompleted) {
+        this.allTasksCompleted = allTasksCompleted;
+    }
+
+    public int getTotalTaskCompleted() {
+        return totalTaskCompleted;
+    }
+
+    public void setTotalTaskCompleted(int totalTaskCompleted) {
+        this.totalTaskCompleted = totalTaskCompleted;
     }
 
     @Override

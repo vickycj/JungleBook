@@ -36,13 +36,13 @@ public class GenerateAnimal {
 
     private Animal findAndGetAnimal(int taskCount ,String[] rules){
         Animal animal = null;
-        switch (rules[taskCount]){
+        switch (rules[taskCount-1]){
             case Constants.CATEGORY.LOW: {
                 animal = Constants.ANIMALS_CATEGORY.LOW_ANIMALS[0];
                 break;
             }
             case Constants.CATEGORY.MEDIUM: {
-                animal = Constants.ANIMALS_CATEGORY.MEDIUM_ANIMALS[Utils.getRandomNumberBetweenTwo(1,3)];
+                animal = Constants.ANIMALS_CATEGORY.MEDIUM_ANIMALS[Utils.getRandomNumberBetweenTwo(0,2)];
                 break;
             }
             case Constants.CATEGORY.HIGH: {

@@ -9,6 +9,12 @@ public class Main {
 
 
 
-        System.out.println("Hello World!");
+        for(int i =1; i < 6; i++){
+            gameRunner.postTaskCompletion(101,i);
+        }
+
+        System.out.println(user);
+
+
     }
 }

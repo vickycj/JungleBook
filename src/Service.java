@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Service {
@@ -18,8 +19,20 @@ public class Service {
            }
 
            updateUserDetails(user);
+
+           user.setTotalTaskCompleted(user.getTotalTaskCompleted()+1);
+
+           if(user.getTotalTaskCompleted() == 9){
+               user.setAllTasksCompleted(true);
+           }
        }
 
+
+       if(user.isAllTasksCompleted()){
+           if(eligibleForDino(user)){
+               user.getAnimalsObtained().add(Constants.ANIMALS.DINO);
+           }
+       }
 
        return user;
 
@@ -37,6 +50,22 @@ public class Service {
             user.setTasksCompletedInCurrentLevel(user.getTasksCompletedInCurrentLevel()+1);
         }
         user.getAnimalsObtained().add(generateAnimal.getAnimal(user,user.isLoyalCustomer()));
+    }
+
+    private boolean eligibleForDino(User user){
+        List<String> animalsList = new ArrayList<>();
+        for (Animal it: user.getAnimalsObtained()){
+            animalsList.add(it.getAnimalName());
+        }
+
+        if(animalsList.contains(Constants.ANIMALS_NAMES.LION)
+                && animalsList.contains(Constants.ANIMALS_NAMES.TIGER)
+                && animalsList.contains(Constants.ANIMALS_NAMES.MONKEY)
+                && animalsList.contains(Constants.ANIMALS_NAMES.GOAT)){
+            return true;
+        }
+
+        return false;
     }
 
     private boolean checkLevels(int taskId, int currentLevel){

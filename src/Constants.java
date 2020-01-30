@@ -15,10 +15,10 @@ public class Constants {
 
     public static class ANIMALS {
         public static final Animal GOAT = new Animal(1, ANIMALS_NAMES.GOAT,CATEGORY.LOW);
-        public static final Animal MONKEY = new Animal(1, ANIMALS_NAMES.MONKEY,CATEGORY.MEDIUM);
-        public static final Animal TIGER = new Animal(1, ANIMALS_NAMES.TIGER,CATEGORY.MEDIUM);
-        public static final Animal LION = new Animal(1, ANIMALS_NAMES.LION,CATEGORY.HIGH);
-        public static final Animal DINO = new Animal(1, ANIMALS_NAMES.DINO,CATEGORY.VERY_HIGH);
+        public static final Animal MONKEY = new Animal(2, ANIMALS_NAMES.MONKEY,CATEGORY.MEDIUM);
+        public static final Animal TIGER = new Animal(3, ANIMALS_NAMES.TIGER,CATEGORY.MEDIUM);
+        public static final Animal LION = new Animal(4, ANIMALS_NAMES.LION,CATEGORY.HIGH);
+        public static final Animal DINO = new Animal(5, ANIMALS_NAMES.DINO,CATEGORY.VERY_HIGH);
     }
 
     public static class ANIMALS_CATEGORY {

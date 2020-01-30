@@ -21,6 +21,13 @@ public class Constants {
         public static final Animal DINO = new Animal(1, ANIMALS_NAMES.DINO,CATEGORY.VERY_HIGH);
     }
 
+    public static class ANIMALS_CATEGORY {
+        public static final Animal[] LOW_ANIMALS = {ANIMALS.GOAT};
+        public static final Animal[] MEDIUM_ANIMALS = {ANIMALS.MONKEY, ANIMALS.TIGER};
+        public static final Animal[] HIGH_ANIMALS = {ANIMALS.LION};
+        public static final Animal[] VERY_HIGH_ANIMALS = {ANIMALS.DINO};
+    }
+
     public static class ANIMALS_NAMES {
         public static final String LION = "lion";
         public static final String TIGER = "tiger";

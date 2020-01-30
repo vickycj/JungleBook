@@ -4,6 +4,12 @@ public class GenerateAnimal {
     private User userdetails;
 
 
+    private Animal getAnimal(){
+
+
+
+        return null;
+    }
 
 
 }
